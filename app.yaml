@@ -1,0 +1,7 @@
+runtime: php74
+handlers:
+# Serve your app through a front controller at index.php or public/index.php.
+- url: .*
+  script: auto
+vpc_access_connector:
+ name: "projects/master-tangent-340802/locations/asia-southeast2/connectors/connectorvpctodb"
